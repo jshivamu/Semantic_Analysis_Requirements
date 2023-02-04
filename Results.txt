@@ -1,0 +1,1434 @@
+Python 3.10.2 (tags/v3.10.2:a58ebcc, Jan 17 2022, 14:12:15) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+
+= RESTART: C:\Jagadish\PhDAttempt\LiteratureSurvey\Work\PyProject\SA_Algorithm\SA_Algorithm.py
+2023-02-03 22:33:23 WARNING: Can not find mwt: default from official model list. Ignoring it.
+2023-02-03 22:33:23 INFO: Loading these models for language: en (English):
+========================
+| Processor | Package  |
+------------------------
+| tokenize  | combined |
+| pos       | combined |
+| lemma     | combined |
+| depparse  | combined |
+========================
+
+2023-02-03 22:33:23 INFO: Use device: cpu
+2023-02-03 22:33:23 INFO: Loading: tokenize
+2023-02-03 22:33:23 INFO: Loading: pos
+2023-02-03 22:33:23 INFO: Loading: lemma
+2023-02-03 22:33:23 INFO: Loading: depparse
+2023-02-03 22:33:23 INFO: Done loading processors!
+
+For debugging
+When the Computer boots up, the Computer shall read the Channel ID from HW
+ shall read ,  root ,  10
+	 boots ,  advcl ,  4
+		 When ,  mark ,  1
+		 the Computer ,  nsubj ,  3
+		 up ,  advmod ,  5
+	 the Computer ,  nsubj ,  8
+	 the Channel ID ,  obj ,  13
+	 from HW ,  obl ,  15
+End of debugging
+
+
+RI:1:When the Computer boots up, the Computer shall read the Channel ID from HW
+Importance: Mandatory
+Main Task: shall read
+Trigger type: Event driven
+	Trig Verifiable:False
+	Root Task: boots
+	advmod: up
+	Subect: the Computer
+Subect: the Computer 
+Object: the Channel ID
+Object preps: from HW
+Req Verifiable:True
+
+For debugging
+When the Computer starts, if the other Computer has not already assumed the role of Active computer, the Computer shall assume the role of Active Computer
+ shall assume ,  root ,  23
+	 starts ,  advcl ,  4
+		 When ,  mark ,  1
+		 the Computer ,  nsubj ,  3
+	 assumed ,  advcl ,  13
+		 if ,  mark ,  6
+		 the other Computer ,  nsubj ,  9
+		 has not already ,  advmod ,  12
+		 the role ,  obj ,  15
+			 of Active computer ,  nmod ,  18
+	 the Computer ,  nsubj ,  21
+	 the role ,  obj ,  25
+		 of Active Computer ,  nmod ,  28
+End of debugging
+
+
+RI:2:When the Computer starts, if the other Computer has not already assumed the role of Active computer, the Computer shall assume the role of Active Computer
+Importance: Mandatory
+Main Task: shall assume
+Trigger type: Event driven
+	Trig Verifiable:True
+	Root Task: starts
+	Subect: the Computer
+Trigger type: Conditional
+	Trig Verifiable:False
+	Root Task: assumed
+	advmod: has not already
+	Subect: the other Computer
+	Object: the role
+	Obj qualfier: of Active computer
+Subect: the Computer 
+Object: the role
+Object preps: of Active Computer
+Req Verifiable:True
+
+For debugging
+When the Computer starts, if the other Computer has already assumed the role of Active computer, the Computer shall assume the role of Standby Computer
+ shall assume ,  root ,  22
+	 starts ,  advcl ,  4
+		 When ,  mark ,  1
+		 the Computer ,  nsubj ,  3
+	 assumed ,  advcl ,  12
+		 if ,  mark ,  6
+		 the other Computer ,  nsubj ,  9
+		 has already ,  advmod ,  11
+		 the role ,  obj ,  14
+			 of Active computer ,  nmod ,  17
+	 the Computer ,  nsubj ,  20
+	 the role ,  obj ,  24
+		 of Standby Computer ,  nmod ,  27
+End of debugging
+
+
+RI:3:When the Computer starts, if the other Computer has already assumed the role of Active computer, the Computer shall assume the role of Standby Computer
+Importance: Mandatory
+Main Task: shall assume
+Trigger type: Event driven
+	Trig Verifiable:True
+	Root Task: starts
+	Subect: the Computer
+Trigger type: Conditional
+	Trig Verifiable:False
+	Root Task: assumed
+	advmod: has already
+	Subect: the other Computer
+	Object: the role
+	Obj qualfier: of Active computer
+Subect: the Computer 
+Object: the role
+Object preps: of Standby Computer
+Req Verifiable:True
+
+For debugging
+If both the Computers simultaneously boot up, the Computer with Channel ID 1 shall assume the role of Active Computer
+ shall assume ,  root ,  16
+	 boot up ,  advcl ,  6
+		 If ,  mark ,  1
+		 both the Computers ,  nsubj ,  4
+		 simultaneously ,  advmod ,  5
+	 the Computer ,  nsubj ,  10
+		 with Channel ID 1 ,  nmod ,  13
+	 the role ,  obj ,  18
+		 of Active Computer ,  nmod ,  21
+End of debugging
+
+
+RI:4:If both the Computers simultaneously boot up, the Computer with Channel ID 1 shall assume the role of Active Computer
+Importance: Mandatory
+Main Task: shall assume
+Trigger type: Conditional
+	Trig Verifiable:False
+	Root Task: boot up
+	advmod: simultaneously
+	Subect: both the Computers
+Subect: the Computer
+Subject qualifiers: with Channel ID 1 
+Object: the role
+Object preps: of Active Computer
+Req Verifiable:True
+
+For debugging
+The Active Computer shall configure itself as the Bus Master
+ shall configure ,  root ,  5
+	 The Active Computer ,  nsubj ,  3
+	 itself ,  obj ,  6
+	 as the Bus Master ,  obl ,  10
+End of debugging
+
+
+RI:5:The Active Computer shall configure itself as the Bus Master
+Importance: Mandatory
+Main Task: shall configure
+Subect: The Active Computer 
+Object: itself
+Object preps: as the Bus Master
+Req Verifiable:True
+
+For debugging
+When the Active Computer configures itself as the Bus Master, it shall enter operational state
+ shall enter ,  root ,  14
+	 configures ,  advcl ,  5
+		 When ,  mark ,  1
+		 the Active Computer ,  nsubj ,  4
+		 itself ,  obj ,  6
+		 as the Bus Master ,  obl ,  10
+	 it ,  nsubj ,  12
+	 operational state ,  obj ,  16
+End of debugging
+
+
+RI:6:When the Active Computer configures itself as the Bus Master, it shall enter operational state
+Importance: Mandatory
+Main Task: shall enter
+Trigger type: Event driven
+	Trig Verifiable:True
+	Root Task: configures
+	Subect: the Active Computer
+	Object: itself
+	Trig Qualifier: as the Bus Master
+Subect: it 
+Object: operational state
+Req Verifiable:True
+
+For debugging
+The Standby Computer shall configure itself as a Remote Terminal
+ shall configure ,  root ,  5
+	 The Standby Computer ,  nsubj ,  3
+	 itself ,  obj ,  6
+	 as a Remote Terminal ,  obl ,  10
+End of debugging
+
+
+RI:7:The Standby Computer shall configure itself as a Remote Terminal
+Importance: Mandatory
+Main Task: shall configure
+Subect: The Standby Computer 
+Object: itself
+Object preps: as a Remote Terminal
+Req Verifiable:True
+
+For debugging
+The Active Computer shall detect the booting of the Standby Computer
+ shall detect ,  root ,  5
+	 The Active Computer ,  nsubj ,  3
+	 the booting ,  obj ,  7
+		 of the Standby Computer ,  nmod ,  11
+End of debugging
+
+
+RI:8:The Active Computer shall detect the booting of the Standby Computer
+Importance: Mandatory
+Main Task: shall detect
+Subect: The Active Computer 
+Object: the booting
+Object preps: of the Standby Computer
+Req Verifiable:True
+
+For debugging
+When the Active Computer detects the booting of the Standby Computer, it shall send its state information to the Standby Computer
+ shall send ,  root ,  15
+	 detects ,  advcl ,  5
+		 When ,  mark ,  1
+		 the Active Computer ,  nsubj ,  4
+		 the booting ,  obj ,  7
+			 of the Standby Computer ,  nmod ,  11
+	 it ,  nsubj ,  13
+	 state information ,  obj ,  18
+		 its ,  nmod:poss ,  16
+	 to the Standby Computer ,  obl ,  22
+End of debugging
+
+
+RI:9:When the Active Computer detects the booting of the Standby Computer, it shall send its state information to the Standby Computer
+Importance: Mandatory
+Main Task: shall send
+Trigger type: Event driven
+	Trig Verifiable:True
+	Root Task: detects
+	Subect: the Active Computer
+	Object: the booting
+	Obj qualfier: of the Standby Computer
+Subect: it 
+Object: state information
+Object preps: its
+Object preps: to the Standby Computer
+Req Verifiable:True
+
+For debugging
+When the Standby Computer receives state information from the Active Computer, it shall enter the operational state
+ shall enter ,  root ,  15
+	 receives ,  advcl ,  5
+		 When ,  mark ,  1
+		 the Standby Computer ,  nsubj ,  4
+		 state information ,  obj ,  7
+		 from the Active Computer ,  obl ,  11
+	 it ,  nsubj ,  13
+	 the operational state ,  obj ,  18
+End of debugging
+
+
+RI:10:When the Standby Computer receives state information from the Active Computer, it shall enter the operational state
+Importance: Mandatory
+Main Task: shall enter
+Trigger type: Event driven
+	Trig Verifiable:True
+	Root Task: receives
+	Subect: the Standby Computer
+	Object: state information
+	Trig Qualifier: from the Active Computer
+Subect: it 
+Object: the operational state
+Req Verifiable:True
+
+For debugging
+While in the operational state, the Computers shall repeat the execution every 10 msec
+ shall repeat ,  root ,  10
+	 in the operational state ,  advcl ,  5
+		 While ,  mark ,  1
+	 the Computers ,  nsubj ,  8
+	 the execution ,  obj ,  12
+	 every 10 msec ,  obl:tmod ,  15
+End of debugging
+
+
+RI:11:While in the operational state, the Computers shall repeat the execution every 10 msec
+Importance: Mandatory
+Main Task: shall repeat
+State: in the operational state
+Subect: the Computers 
+Object: the execution
+Adverbs to root:  every 10 msec
+Req Verifiable:True
+
+For debugging
+While in the operational state, when 10 msec elapse, the Active Computer shall command the sensors to provide their inputs, status, and health to the Active Computer
+ shall command ,  root ,  16
+	 in the operational state ,  advcl ,  5
+		 While ,  mark ,  1
+	 10 msec elapse ,  advcl ,  10
+		 when ,  mark ,  7
+	 the Active Computer ,  nsubj ,  14
+	 the sensors ,  obj ,  18
+	 provide ,  advcl ,  20
+		 to ,  mark ,  19
+		 inputs status and health ,  obj ,  22
+			 their ,  nmod:poss ,  21
+		 to the Active Computer ,  obl ,  31
+End of debugging
+
+
+RI:12:While in the operational state, when 10 msec elapse, the Active Computer shall command the sensors to provide their inputs, status, and health to the Active Computer
+Importance: Mandatory
+Main Task: shall command
+State: in the operational state
+Trigger type: Event driven
+	Trig Verifiable:True
+	Root Task: 10 msec elapse
+Subect: the Active Computer 
+Object: the sensors
+Obj Clause:
+ provide
+	 to
+	 inputs status and health
+		 their
+	 to the Active Computer
+Req Verifiable:True
+
+For debugging
+While in the operational state, the Active Computer shall send the command to a Remote Terminal on bus A
+ shall send ,  root ,  11
+	 in the operational state ,  advcl ,  5
+		 While ,  mark ,  1
+	 the Active Computer ,  nsubj ,  9
+	 the command ,  obj ,  13
+	 to a Remote Terminal ,  obl ,  17
+	 on bus A ,  obl ,  20
+End of debugging
+
+
+RI:13:While in the operational state, the Active Computer shall send the command to a Remote Terminal on bus A
+Importance: Mandatory
+Main Task: shall send
+State: in the operational state
+Subect: the Active Computer 
+Object: the command
+Object preps: to a Remote Terminal
+Object preps: on bus A
+Req Verifiable:True
+
+For debugging
+While in the operational state, the Active Computer shall include a heartbeat counter in its command.
+ shall include ,  root ,  11
+	 in the operational state ,  advcl ,  5
+		 While ,  mark ,  1
+	 the Active Computer ,  nsubj ,  9
+	 a heartbeat counter ,  obj ,  14
+	 command ,  obl ,  17
+		 in its ,  nmod:poss ,  16
+End of debugging
+
+
+RI:14:While in the operational state, the Active Computer shall include a heartbeat counter in its command.
+Importance: Mandatory
+Main Task: shall include
+State: in the operational state
+Subect: the Active Computer 
+Object: a heartbeat counter
+Object preps: command
+Req Verifiable:True
+
+For debugging
+While in the operational state, if any Remote Terminal does not acknowledge the commands on either bus A or B for 3 consecutive periods, the Active Computer shall declare communication failure for that Remote Terminal
+ shall declare ,  root ,  31
+	 in the operational state ,  advcl ,  5
+		 While ,  mark ,  1
+	 does not acknowledge ,  advcl ,  13
+		 if ,  mark ,  7
+		 any Remote Terminal ,  nsubj ,  10
+		 the commands ,  obj ,  15
+			 on either bus A or B ,  nmod ,  19
+				 for 3 consecutive periods ,  nmod ,  25
+	 the Active Computer ,  nsubj ,  29
+	 communication failure ,  obj ,  33
+		 for that Remote Terminal ,  nmod ,  37
+End of debugging
+
+
+RI:15:While in the operational state, if any Remote Terminal does not acknowledge the commands on either bus A or B for 3 consecutive periods, the Active Computer shall declare communication failure for that Remote Terminal
+Importance: Mandatory
+Main Task: shall declare
+State: in the operational state
+Trigger type: Conditional
+	Trig Verifiable:True
+	Root Task: does not acknowledge
+	Subect: any Remote Terminal
+	Object: the commands
+	Obj qualfier: on either bus A or B
+Subect: the Active Computer 
+Object: communication failure
+Object preps: for that Remote Terminal
+Req Verifiable:True
+
+For debugging
+While in the operational state, if any Remote Terminal's heartbeat count does not change for 3 consecutive frames, the Active Computer shall declare failure for that Remote Terminal
+ shall declare ,  root ,  26
+	 in the operational state ,  advcl ,  5
+		 While ,  mark ,  1
+	 does not change ,  advcl ,  16
+		 if ,  mark ,  7
+		 heartbeat count ,  nsubj ,  13
+			 any Remote Terminal 's ,  nmod:poss ,  10
+		 for 3 consecutive frames ,  obl ,  20
+	 the Active Computer ,  nsubj ,  24
+	 failure ,  obj ,  27
+		 for that Remote Terminal ,  nmod ,  31
+End of debugging
+
+
+RI:16:While in the operational state, if any Remote Terminal's heartbeat count does not change for 3 consecutive frames, the Active Computer shall declare failure for that Remote Terminal
+Importance: Mandatory
+Main Task: shall declare
+State: in the operational state
+Trigger type: Conditional
+	Trig Verifiable:True
+	Root Task: does not change
+	Subect: heartbeat count
+		Sub qualfier: any Remote Terminal 's
+	Trig Qualifier: for 3 consecutive frames
+Subect: the Active Computer 
+Object: failure
+Object preps: for that Remote Terminal
+Req Verifiable:True
+
+For debugging
+While in the operational state, if a Remote Terminal responds for 3 consecutive periods, the Active Computer shall set communication failure OFF for that Remote Terminal
+ shall set ,  root ,  21
+	 in the operational state ,  advcl ,  5
+		 While ,  mark ,  1
+	 responds ,  advcl ,  11
+		 if ,  mark ,  7
+		 a Remote Terminal ,  nsubj ,  10
+		 for 3 consecutive periods ,  obl ,  15
+	 the Active Computer ,  nsubj ,  19
+	 communication failure OFF ,  obj ,  24
+	 for that Remote Terminal ,  obl ,  28
+End of debugging
+
+
+RI:17:While in the operational state, if a Remote Terminal responds for 3 consecutive periods, the Active Computer shall set communication failure OFF for that Remote Terminal
+Importance: Mandatory
+Main Task: shall set
+State: in the operational state
+Trigger type: Conditional
+	Trig Verifiable:True
+	Root Task: responds
+	Subect: a Remote Terminal
+	Trig Qualifier: for 3 consecutive periods
+Subect: the Active Computer 
+Object: communication failure OFF
+Object preps: for that Remote Terminal
+Req Verifiable:True
+
+For debugging
+While in the operational state, if both redundant pairs of Remote Terminals are healthy, the Active Computer shall consider the average of the inputs from them.
+ shall consider ,  root ,  21
+	 in the operational state ,  advcl ,  5
+		 While ,  mark ,  1
+	 are healthy ,  advcl ,  15
+		 if ,  mark ,  7
+		 both redundant pairs ,  nsubj ,  10
+			 of Remote Terminals ,  nmod ,  13
+	 the Active Computer ,  nsubj ,  19
+	 the average ,  obj ,  23
+		 of the inputs ,  nmod ,  26
+			 from them ,  nmod ,  28
+End of debugging
+
+
+RI:18:While in the operational state, if both redundant pairs of Remote Terminals are healthy, the Active Computer shall consider the average of the inputs from them.
+Importance: Mandatory
+Main Task: shall consider
+State: in the operational state
+Trigger type: Conditional
+	Trig Verifiable:True
+	Root Task: are healthy
+	Subect: both redundant pairs
+		Sub qualfier: of Remote Terminals
+Subect: the Active Computer 
+Object: the average
+Object preps: of the inputs
+Req Verifiable:True
+
+For debugging
+While in the operational state, if communication failure is declared for a Remote Terminal, the Active Computer shall not consider the inputs from it.
+ shall not consider ,  root ,  22
+	 in the operational state ,  advcl ,  5
+		 While ,  mark ,  1
+	 is declared ,  advcl ,  11
+		 if ,  mark ,  7
+		 communication failure ,  nsubj:pass ,  9
+		 for a Remote Terminal ,  obl ,  15
+	 the Active Computer ,  nsubj ,  19
+	 the inputs ,  obj ,  24
+		 from it ,  nmod ,  26
+End of debugging
+
+
+RI:19:While in the operational state, if communication failure is declared for a Remote Terminal, the Active Computer shall not consider the inputs from it.
+Importance: Mandatory
+Main Task: shall not consider
+State: in the operational state
+Trigger type: Conditional
+	Trig Verifiable:True
+	Root Task: is declared
+	Subect: communication failure
+	Trig Qualifier: for a Remote Terminal
+Subect: the Active Computer 
+Object: the inputs
+Object preps: from it
+Req Verifiable:True
+
+For debugging
+While in the operational state, if a Remote Terminal has indicated failure in its status, the Active Computer shall not consider the inputs from it.
+ shall not consider ,  root ,  23
+	 in the operational state ,  advcl ,  5
+		 While ,  mark ,  1
+	 has indicated ,  advcl ,  12
+		 if ,  mark ,  7
+		 a Remote Terminal ,  nsubj ,  10
+		 failure ,  obj ,  13
+			 status ,  nmod ,  16
+				 in its ,  nmod:poss ,  15
+	 the Active Computer ,  nsubj ,  20
+	 the inputs ,  obj ,  25
+		 from it ,  nmod ,  27
+End of debugging
+
+
+RI:20:While in the operational state, if a Remote Terminal has indicated failure in its status, the Active Computer shall not consider the inputs from it.
+Importance: Mandatory
+Main Task: shall not consider
+State: in the operational state
+Trigger type: Conditional
+	Trig Verifiable:True
+	Root Task: has indicated
+	Subect: a Remote Terminal
+	Object: failure
+	Obj qualfier: status
+Subect: the Active Computer 
+Object: the inputs
+Object preps: from it
+Req Verifiable:True
+
+For debugging
+While in the operational state, if the inputs are not considered from a Remote Terminal, the Active Computer shall consider the inputs from the corresponding redundant pair
+ shall consider ,  root ,  22
+	 in the operational state ,  advcl ,  5
+		 While ,  mark ,  1
+	 are not considered ,  advcl ,  12
+		 if ,  mark ,  7
+		 the inputs ,  nsubj:pass ,  9
+		 from a Remote Terminal ,  obl ,  16
+	 the Active Computer ,  nsubj ,  20
+	 the inputs ,  obj ,  24
+		 from the corresponding redundant pair ,  nmod ,  29
+End of debugging
+
+
+RI:21:While in the operational state, if the inputs are not considered from a Remote Terminal, the Active Computer shall consider the inputs from the corresponding redundant pair
+Importance: Mandatory
+Main Task: shall consider
+State: in the operational state
+Trigger type: Conditional
+	Trig Verifiable:True
+	Root Task: are not considered
+	Subect: the inputs
+	Trig Qualifier: from a Remote Terminal
+Subect: the Active Computer 
+Object: the inputs
+Object preps: from the corresponding redundant pair
+Req Verifiable:True
+
+For debugging
+While in the operational state, if the inputs from both the redundant pair of Remote Terminals are failed, the Active Computer shall retain the previous inputs.
+ shall retain ,  root ,  25
+	 in the operational state ,  advcl ,  5
+		 While ,  mark ,  1
+	 are failed ,  advcl ,  19
+		 if ,  mark ,  7
+		 the inputs ,  nsubj:pass ,  9
+			 from both the redundant pair ,  nmod ,  14
+				 of Remote Terminals ,  nmod ,  17
+	 the Active Computer ,  nsubj ,  23
+	 the previous inputs ,  obj ,  28
+End of debugging
+
+
+RI:22:While in the operational state, if the inputs from both the redundant pair of Remote Terminals are failed, the Active Computer shall retain the previous inputs.
+Importance: Mandatory
+Main Task: shall retain
+State: in the operational state
+Trigger type: Conditional
+	Trig Verifiable:True
+	Root Task: are failed
+	Subect: the inputs
+		Sub qualfier: from both the redundant pair
+Subect: the Active Computer 
+Object: the previous inputs
+Req Verifiable:True
+
+For debugging
+While in the operational state, the Standby Computer shall update the status of each Remote Terminal
+ shall update ,  root ,  11
+	 in the operational state ,  advcl ,  5
+		 While ,  mark ,  1
+	 the Standby Computer ,  nsubj ,  9
+	 the status ,  obj ,  13
+		 of each Remote Terminal ,  nmod ,  17
+End of debugging
+
+
+RI:23:While in the operational state, the Standby Computer shall update the status of each Remote Terminal
+Importance: Mandatory
+Main Task: shall update
+State: in the operational state
+Subect: the Standby Computer 
+Object: the status
+Object preps: of each Remote Terminal
+Req Verifiable:True
+
+For debugging
+While in the operational state, if the Active Computer does not send commands for 10 consecutive frames to any Remote Terminal, the Standby Computer shall take over as Active Computer
+ shall take over ,  root ,  28
+	 in the operational state ,  advcl ,  5
+		 While ,  mark ,  1
+	 does not send ,  advcl ,  13
+		 if ,  mark ,  7
+		 the Active Computer ,  nsubj ,  10
+		 commands ,  obj ,  14
+		 for 10 consecutive frames ,  obl ,  18
+			 to any Remote Terminal ,  nmod ,  22
+	 the Standby Computer ,  nsubj ,  26
+	 as Active Computer ,  obl ,  32
+End of debugging
+
+
+RI:24:While in the operational state, if the Active Computer does not send commands for 10 consecutive frames to any Remote Terminal, the Standby Computer shall take over as Active Computer
+Importance: Mandatory
+Main Task: shall take over
+State: in the operational state
+Trigger type: Conditional
+	Trig Verifiable:True
+	Root Task: does not send
+	Subect: the Active Computer
+	Object: commands
+	Trig Qualifier: for 10 consecutive frames
+Subect: the Standby Computer
+Object preps: as Active Computer
+Req Verifiable:True
+
+For debugging
+While in the operational state, the Standby Computer shall report its health status to Active Computer
+ shall report ,  root ,  11
+	 in the operational state ,  advcl ,  5
+		 While ,  mark ,  1
+	 the Standby Computer ,  nsubj ,  9
+	 health status ,  obj ,  14
+		 its ,  nmod:poss ,  12
+	 to Active Computer ,  obl ,  17
+End of debugging
+
+
+RI:25:While in the operational state, the Standby Computer shall report its health status to Active Computer
+Importance: Mandatory
+Main Task: shall report
+State: in the operational state
+Subect: the Standby Computer 
+Object: health status
+Object preps: its
+Object preps: to Active Computer
+Req Verifiable:True
+
+For debugging
+The Computer shall send the Remote Terminal's health and status to Telemetry every 10 msec
+ shall send ,  root ,  4
+	 The Computer ,  nsubj ,  2
+	 health and status ,  obj ,  9
+		 the Remote Terminal 's ,  nmod:poss ,  7
+	 to Telemetry ,  obl ,  13
+	 every 10 msec ,  obl:tmod ,  16
+End of debugging
+
+
+RI:26:The Computer shall send the Remote Terminal's health and status to Telemetry every 10 msec
+Importance: Mandatory
+Main Task: shall send
+Subect: The Computer 
+Object: health and status
+Object preps: the Remote Terminal 's
+Object preps: to Telemetry
+Adverbs to root:  every 10 msec
+Req Verifiable:True
+
+For debugging
+The Active Computer shall send the health and status of the Standby Computer to Telemetry every 10 msec
+ shall send ,  root ,  5
+	 The Active Computer ,  nsubj ,  3
+	 the health and status ,  obj ,  7
+		 of the Standby Computer ,  nmod ,  13
+	 to Telemetry ,  obl ,  15
+	 every 10 msec ,  obl:tmod ,  18
+End of debugging
+
+
+RI:27:The Active Computer shall send the health and status of the Standby Computer to Telemetry every 10 msec
+Importance: Mandatory
+Main Task: shall send
+Subect: The Active Computer 
+Object: the health and status
+Object preps: of the Standby Computer
+Object preps: to Telemetry
+Adverbs to root:  every 10 msec
+Req Verifiable:True
+
+For debugging
+The Standby Computer shall send the health and status of the Active Computer to Telemetry every 10 msec
+ shall send ,  root ,  5
+	 The Standby Computer ,  nsubj ,  3
+	 the health and status ,  obj ,  7
+		 of the Active Computer ,  nmod ,  13
+	 to Telemetry ,  obl ,  15
+	 every 10 msec ,  obl:tmod ,  18
+End of debugging
+
+
+RI:28:The Standby Computer shall send the health and status of the Active Computer to Telemetry every 10 msec
+Importance: Mandatory
+Main Task: shall send
+Subect: The Standby Computer 
+Object: the health and status
+Object preps: of the Active Computer
+Object preps: to Telemetry
+Adverbs to root:  every 10 msec
+Req Verifiable:True
+
+For debugging
+If the Active Computer fails, the Standby Computer shall take over as Active Computer
+ shall take over ,  root ,  11
+	 fails ,  advcl ,  5
+		 If ,  mark ,  1
+		 the Active Computer ,  nsubj ,  4
+	 the Standby Computer ,  nsubj ,  9
+	 as Active Computer ,  obl ,  15
+End of debugging
+
+
+RI:29:If the Active Computer fails, the Standby Computer shall take over as Active Computer
+Importance: Mandatory
+Main Task: shall take over
+Trigger type: Conditional
+	Trig Verifiable:True
+	Root Task: fails
+	Subect: the Active Computer
+Subect: the Standby Computer
+Object preps: as Active Computer
+Req Verifiable:True
+
+For debugging
+If the Active Computer fails, the Standby Computer shall assume the role of Active Computer
+ shall assume ,  root ,  11
+	 fails ,  advcl ,  5
+		 If ,  mark ,  1
+		 the Active Computer ,  nsubj ,  4
+	 the Standby Computer ,  nsubj ,  9
+	 the role ,  obj ,  13
+		 of Active Computer ,  nmod ,  16
+End of debugging
+
+
+RI:30:If the Active Computer fails, the Standby Computer shall assume the role of Active Computer
+Importance: Mandatory
+Main Task: shall assume
+Trigger type: Conditional
+	Trig Verifiable:True
+	Root Task: fails
+	Subect: the Active Computer
+Subect: the Standby Computer 
+Object: the role
+Object preps: of Active Computer
+Req Verifiable:True
+
+For debugging
+When powered on, the Ventilator shall check for the presence of the calibration data
+ shall check ,  root ,  8
+	 powered on ,  advcl ,  2
+		 When ,  mark ,  1
+	 the Ventilator ,  nsubj ,  6
+	 for the presence ,  obl ,  11
+		 of the calibration data ,  nmod ,  15
+End of debugging
+
+
+RI:31:When powered on, the Ventilator shall check for the presence of the calibration data
+Importance: Mandatory
+Main Task: shall check
+Trigger type: Event driven
+	Trig Verifiable:True
+	Root Task: powered on
+Subect: the Ventilator
+Object preps: for the presence
+Req Verifiable:True
+
+For debugging
+When powered on, if the calibration data is not present, the Ventilator shall prompt for Calibration
+ shall prompt ,  root ,  16
+	 powered on ,  advcl ,  2
+		 When ,  mark ,  1
+	 is not present ,  advcl ,  11
+		 if ,  mark ,  5
+		 the calibration data ,  nsubj ,  8
+	 the Ventilator ,  nsubj ,  14
+	 for Calibration ,  obl ,  18
+End of debugging
+
+
+RI:32:When powered on, if the calibration data is not present, the Ventilator shall prompt for Calibration
+Importance: Mandatory
+Main Task: shall prompt
+Trigger type: Event driven
+	Trig Verifiable:True
+	Root Task: powered on
+Trigger type: Conditional
+	Trig Verifiable:True
+	Root Task: is not present
+	Subect: the calibration data
+Subect: the Ventilator
+Object preps: for Calibration
+Req Verifiable:True
+
+For debugging
+When powered on, if the calibration data is older than six months, the Ventilator shall prompt for Calibration
+ shall prompt ,  root ,  18
+	 powered on ,  advcl ,  2
+		 When ,  mark ,  1
+	 is older ,  advcl ,  10
+		 if ,  mark ,  5
+		 the calibration data ,  nsubj ,  8
+		 than six months ,  obl ,  13
+	 the Ventilator ,  nsubj ,  16
+	 for Calibration ,  obl ,  20
+End of debugging
+
+
+RI:33:When powered on, if the calibration data is older than six months, the Ventilator shall prompt for Calibration
+Importance: Mandatory
+Main Task: shall prompt
+Trigger type: Event driven
+	Trig Verifiable:True
+	Root Task: powered on
+Trigger type: Conditional
+	Trig Verifiable:True
+	Root Task: is older
+	Subect: the calibration data
+	Trig Qualifier: than six months
+Subect: the Ventilator
+Object preps: for Calibration
+Req Verifiable:True
+
+For debugging
+If valid Calibration data is not found, the Ventilator shall not allow starting of the ventilation
+ shall not allow ,  root ,  13
+	 is not found ,  advcl ,  7
+		 If ,  mark ,  1
+		 valid Calibration data ,  nsubj:pass ,  4
+	 the Ventilator ,  nsubj ,  10
+	 starting ,  obj ,  14
+		 of the ventilation ,  nmod ,  17
+End of debugging
+
+
+RI:34:If valid Calibration data is not found, the Ventilator shall not allow starting of the ventilation
+Importance: Mandatory
+Main Task: shall not allow
+Trigger type: Conditional
+	Trig Verifiable:True
+	Root Task: is not found
+	Subect: valid Calibration data
+Subect: the Ventilator 
+Object: starting
+Object preps: of the ventilation
+Req Verifiable:True
+
+For debugging
+When the Start ventilation button is pressed, the Ventilator shall read configuration data from the UI Controller
+ shall read ,  root ,  12
+	 is pressed ,  advcl ,  7
+		 When ,  mark ,  1
+		 the Start ventilation button ,  nsubj:pass ,  5
+	 the Ventilator ,  nsubj ,  10
+	 configuration data ,  obj ,  14
+	 from the UI Controller ,  obl ,  18
+End of debugging
+
+
+RI:35:When the Start ventilation button is pressed, the Ventilator shall read configuration data from the UI Controller
+Importance: Mandatory
+Main Task: shall read
+Trigger type: Event driven
+	Trig Verifiable:True
+	Root Task: is pressed
+	Subect: the Start ventilation button
+Subect: the Ventilator 
+Object: configuration data
+Object preps: from the UI Controller
+Req Verifiable:True
+
+For debugging
+When the configuration data is read, the Ventilator shall compute the inhalation period and exhalation period from the I-E ratio and Respiration rate
+ shall compute ,  root ,  11
+	 is read ,  advcl ,  6
+		 When ,  mark ,  1
+		 the configuration data ,  nsubj:pass ,  4
+	 the Ventilator ,  nsubj ,  9
+	 the inhalation period and exhalation period ,  obj ,  14
+	 from the I -E ratio and Respiration rate ,  obl ,  25
+End of debugging
+
+
+RI:36:When the configuration data is read, the Ventilator shall compute the inhalation period and exhalation period from the I-E ratio and Respiration rate
+Importance: Mandatory
+Main Task: shall compute
+Trigger type: Event driven
+	Trig Verifiable:True
+	Root Task: is read
+	Subect: the configuration data
+Subect: the Ventilator 
+Object: the inhalation period and exhalation period
+Object preps: from the I -E ratio and Respiration rate
+Req Verifiable:True
+
+For debugging
+When the Start ventilation button is pressed, the Ventilator shall enter inhalation cycles
+ shall enter ,  root ,  12
+	 is pressed ,  advcl ,  7
+		 When ,  mark ,  1
+		 the Start ventilation button ,  nsubj:pass ,  5
+	 the Ventilator ,  nsubj ,  10
+	 inhalation cycles ,  obj ,  14
+End of debugging
+
+
+RI:37:When the Start ventilation button is pressed, the Ventilator shall enter inhalation cycles
+Importance: Mandatory
+Main Task: shall enter
+Trigger type: Event driven
+	Trig Verifiable:True
+	Root Task: is pressed
+	Subect: the Start ventilation button
+Subect: the Ventilator 
+Object: inhalation cycles
+Req Verifiable:True
+
+For debugging
+When entering the inhalation cycle, the Ventilator shall compute the flow rate from configured Tidal volume and inhalation period
+ shall compute ,  root ,  10
+	 entering ,  advcl ,  2
+		 When ,  mark ,  1
+		 the inhalation cycle ,  obj ,  5
+	 the Ventilator ,  nsubj ,  8
+	 the flow rate ,  obj ,  13
+	 from configured Tidal volume and inhalation period ,  obl ,  17
+End of debugging
+
+
+RI:38:When entering the inhalation cycle, the Ventilator shall compute the flow rate from configured Tidal volume and inhalation period
+Importance: Mandatory
+Main Task: shall compute
+Trigger type: Event driven
+	Trig Verifiable:True
+	Root Task: entering
+	Object: the inhalation cycle
+Subect: the Ventilator 
+Object: the flow rate
+Object preps: from configured Tidal volume and inhalation period
+Req Verifiable:True
+
+For debugging
+While in the inhalation cycle, if the volume mode is chosen, the Ventilator shall maintain a constant flow rate
+ shall maintain ,  root ,  17
+	 in the inhalation cycle ,  advcl ,  5
+		 While ,  mark ,  1
+	 is chosen ,  advcl ,  12
+		 if ,  mark ,  7
+		 the volume mode ,  nsubj:pass ,  10
+	 the Ventilator ,  nsubj ,  15
+	 a constant flow rate ,  obj ,  21
+End of debugging
+
+
+RI:39:While in the inhalation cycle, if the volume mode is chosen, the Ventilator shall maintain a constant flow rate
+Importance: Mandatory
+Main Task: shall maintain
+State: in the inhalation cycle
+Trigger type: Conditional
+	Trig Verifiable:True
+	Root Task: is chosen
+	Subect: the volume mode
+Subect: the Ventilator 
+Object: a constant flow rate
+Req Verifiable:True
+
+For debugging
+While in the inhalation cycle, if the pressure mode is chosen, the Ventilator shall maintain a constant lung pressure
+ shall maintain ,  root ,  17
+	 in the inhalation cycle ,  advcl ,  5
+		 While ,  mark ,  1
+	 is chosen ,  advcl ,  12
+		 if ,  mark ,  7
+		 the pressure mode ,  nsubj:pass ,  10
+	 the Ventilator ,  nsubj ,  15
+	 a constant lung pressure ,  obj ,  21
+End of debugging
+
+
+RI:40:While in the inhalation cycle, if the pressure mode is chosen, the Ventilator shall maintain a constant lung pressure
+Importance: Mandatory
+Main Task: shall maintain
+State: in the inhalation cycle
+Trigger type: Conditional
+	Trig Verifiable:True
+	Root Task: is chosen
+	Subect: the pressure mode
+Subect: the Ventilator 
+Object: a constant lung pressure
+Req Verifiable:True
+
+For debugging
+While in the inhalation cycle, if the inhalation period is complete, the Ventilator shall enter the exhalation cycle
+ shall enter ,  root ,  17
+	 in the inhalation cycle ,  advcl ,  5
+		 While ,  mark ,  1
+	 is complete ,  advcl ,  12
+		 if ,  mark ,  7
+		 the inhalation period ,  nsubj ,  10
+	 the Ventilator ,  nsubj ,  15
+	 the exhalation cycle ,  obj ,  20
+End of debugging
+
+
+RI:41:While in the inhalation cycle, if the inhalation period is complete, the Ventilator shall enter the exhalation cycle
+Importance: Mandatory
+Main Task: shall enter
+State: in the inhalation cycle
+Trigger type: Conditional
+	Trig Verifiable:True
+	Root Task: is complete
+	Subect: the inhalation period
+Subect: the Ventilator 
+Object: the exhalation cycle
+Req Verifiable:True
+
+For debugging
+When exiting the inhalation cycle, the Ventilator shall update the inhaled Tidal volume on the screen
+ shall update ,  root ,  10
+	 exiting ,  advcl ,  2
+		 When ,  mark ,  1
+		 the inhalation cycle ,  obj ,  5
+	 the Ventilator ,  nsubj ,  8
+	 the inhaled Tidal volume ,  obj ,  14
+		 on the screen ,  nmod ,  17
+End of debugging
+
+
+RI:42:When exiting the inhalation cycle, the Ventilator shall update the inhaled Tidal volume on the screen
+Importance: Mandatory
+Main Task: shall update
+Trigger type: Event driven
+	Trig Verifiable:True
+	Root Task: exiting
+	Object: the inhalation cycle
+Subect: the Ventilator 
+Object: the inhaled Tidal volume
+Object preps: on the screen
+Req Verifiable:True
+
+For debugging
+While in the exhalation cycle, the Ventilator shall maintain the lung pressure to the configured PEEP level
+ shall maintain ,  root ,  10
+	 in the exhalation cycle ,  advcl ,  5
+		 While ,  mark ,  1
+	 the Ventilator ,  nsubj ,  8
+	 the lung pressure ,  obj ,  13
+		 to the configured PEEP level ,  nmod ,  18
+End of debugging
+
+
+RI:43:While in the exhalation cycle, the Ventilator shall maintain the lung pressure to the configured PEEP level
+Importance: Mandatory
+Main Task: shall maintain
+State: in the exhalation cycle
+Subect: the Ventilator 
+Object: the lung pressure
+Object preps: to the configured PEEP level
+Req Verifiable:True
+
+For debugging
+While in the exhalation cycle, the Ventilator shall measure the exhaled Tidal volume
+ shall measure ,  root ,  10
+	 in the exhalation cycle ,  advcl ,  5
+		 While ,  mark ,  1
+	 the Ventilator ,  nsubj ,  8
+	 the exhaled Tidal volume ,  obj ,  14
+End of debugging
+
+
+RI:44:While in the exhalation cycle, the Ventilator shall measure the exhaled Tidal volume
+Importance: Mandatory
+Main Task: shall measure
+State: in the exhalation cycle
+Subect: the Ventilator 
+Object: the exhaled Tidal volume
+Req Verifiable:True
+
+For debugging
+While in the exhalation cycle, if the exhalation period is complete, the Ventilator shall enter the inhalation cycle
+ shall enter ,  root ,  17
+	 in the exhalation cycle ,  advcl ,  5
+		 While ,  mark ,  1
+	 is complete ,  advcl ,  12
+		 if ,  mark ,  7
+		 the exhalation period ,  nsubj ,  10
+	 the Ventilator ,  nsubj ,  15
+	 the inhalation cycle ,  obj ,  20
+End of debugging
+
+
+RI:45:While in the exhalation cycle, if the exhalation period is complete, the Ventilator shall enter the inhalation cycle
+Importance: Mandatory
+Main Task: shall enter
+State: in the exhalation cycle
+Trigger type: Conditional
+	Trig Verifiable:True
+	Root Task: is complete
+	Subect: the exhalation period
+Subect: the Ventilator 
+Object: the inhalation cycle
+Req Verifiable:True
+
+For debugging
+When exiting the exhalation cycle, the Ventilator shall update the exhaled Tidal volume on the screen
+ shall update ,  root ,  10
+	 exiting ,  advcl ,  2
+		 When ,  mark ,  1
+		 the exhalation cycle ,  obj ,  5
+	 the Ventilator ,  nsubj ,  8
+	 the exhaled Tidal volume ,  obj ,  14
+		 on the screen ,  nmod ,  17
+End of debugging
+
+
+RI:46:When exiting the exhalation cycle, the Ventilator shall update the exhaled Tidal volume on the screen
+Importance: Mandatory
+Main Task: shall update
+Trigger type: Event driven
+	Trig Verifiable:True
+	Root Task: exiting
+	Object: the exhalation cycle
+Subect: the Ventilator 
+Object: the exhaled Tidal volume
+Object preps: on the screen
+Req Verifiable:True
+
+For debugging
+When exiting the exhalation cycle, the Ventilator shall read the configuration data from UI Controller
+ shall read ,  root ,  10
+	 exiting ,  advcl ,  2
+		 When ,  mark ,  1
+		 the exhalation cycle ,  obj ,  5
+	 the Ventilator ,  nsubj ,  8
+	 the configuration data ,  obj ,  13
+	 from UI Controller ,  obl ,  16
+End of debugging
+
+
+RI:47:When exiting the exhalation cycle, the Ventilator shall read the configuration data from UI Controller
+Importance: Mandatory
+Main Task: shall read
+Trigger type: Event driven
+	Trig Verifiable:True
+	Root Task: exiting
+	Object: the exhalation cycle
+Subect: the Ventilator 
+Object: the configuration data
+Object preps: from UI Controller
+Req Verifiable:True
+
+For debugging
+If the lung pressure exceeds configured safety limit, the Ventilator shall open the safety valve
+ shall open ,  root ,  13
+	 exceeds ,  advcl ,  5
+		 If ,  mark ,  1
+		 the lung pressure ,  nsubj ,  4
+		 configured safety limit ,  obj ,  8
+	 the Ventilator ,  nsubj ,  11
+	 the safety valve ,  obj ,  16
+End of debugging
+
+
+RI:48:If the lung pressure exceeds configured safety limit, the Ventilator shall open the safety valve
+Importance: Mandatory
+Main Task: shall open
+Trigger type: Conditional
+	Trig Verifiable:True
+	Root Task: exceeds
+	Subect: the lung pressure
+	Object: configured safety limit
+Subect: the Ventilator 
+Object: the safety valve
+Req Verifiable:True
+
+For debugging
+If the lung pressure exceeds configured safety limit continously for one second, the Ventilator shall open the safety valve
+ shall open ,  root ,  17
+	 exceeds ,  advcl ,  5
+		 If ,  mark ,  1
+		 the lung pressure ,  nsubj ,  4
+		 configured safety limit ,  obj ,  8
+		 continously ,  advmod ,  9
+		 for one second ,  obl ,  12
+	 the Ventilator ,  nsubj ,  15
+	 the safety valve ,  obj ,  20
+End of debugging
+
+
+RI:49:If the lung pressure exceeds configured safety limit continously for one second, the Ventilator shall open the safety valve
+Importance: Mandatory
+Main Task: shall open
+Trigger type: Conditional
+	Trig Verifiable:False
+	Root Task: exceeds
+	advmod: continously
+	Subect: the lung pressure
+	Object: configured safety limit
+	Trig Qualifier: for one second
+Subect: the Ventilator 
+Object: the safety valve
+Req Verifiable:True
+
+For debugging
+If the moving average of 3 readings of lung pressure exceeds configured safety limit, the Ventilator shall open the safety valve
+ shall open ,  root ,  19
+	 exceeds ,  advcl ,  11
+		 If ,  mark ,  1
+		 the moving average ,  nsubj ,  4
+			 of 3 readings ,  nmod ,  7
+				 of lung pressure ,  nmod ,  10
+		 configured safety limit ,  obj ,  14
+	 the Ventilator ,  nsubj ,  17
+	 the safety valve ,  obj ,  22
+End of debugging
+
+
+RI:50:If the moving average of 3 readings of lung pressure exceeds configured safety limit, the Ventilator shall open the safety valve
+Importance: Mandatory
+Main Task: shall open
+Trigger type: Conditional
+	Trig Verifiable:True
+	Root Task: exceeds
+	Subect: the moving average
+		Sub qualfier: of 3 readings
+	Object: configured safety limit
+Subect: the Ventilator 
+Object: the safety valve
+Req Verifiable:True
+
+For debugging
+If the power source is the battery the Ventilator shall make a short beep every 3 seconds
+ shall make ,  root ,  11
+	 is the battery ,  advcl ,  7
+		 If ,  mark ,  1
+		 the power source ,  nsubj ,  4
+	 the Ventilator ,  nsubj ,  9
+	 a short beep ,  obj ,  14
+	 every 3 seconds ,  obl:tmod ,  17
+End of debugging
+
+
+RI:51:If the power source is the battery the Ventilator shall make a short beep every 3 seconds
+Importance: Mandatory
+Main Task: shall make
+Trigger type: Conditional
+	Trig Verifiable:True
+	Root Task: is the battery
+	Subect: the power source
+Subect: the Ventilator 
+Object: a short beep
+Adverbs to root:  every 3 seconds
+Req Verifiable:True
+
+For debugging
+If the inlet air pressure is below the critical limit, the Ventilator shall make a long beep every 1 second
+ shall make ,  root ,  15
+	 is below the critical limit ,  advcl ,  10
+		 If ,  mark ,  1
+		 the inlet air pressure ,  nsubj ,  5
+	 the Ventilator ,  nsubj ,  13
+	 a long beep ,  obj ,  18
+	 every 1 second ,  obl:tmod ,  21
+End of debugging
+
+
+RI:52:If the inlet air pressure is below the critical limit, the Ventilator shall make a long beep every 1 second
+Importance: Mandatory
+Main Task: shall make
+Trigger type: Conditional
+	Trig Verifiable:True
+	Root Task: is below the critical limit
+	Subect: the inlet air pressure
+Subect: the Ventilator 
+Object: a long beep
+Adverbs to root:  every 1 second
+Req Verifiable:True
+
+For debugging
+If the lung pressure during exhalation period is below PEEP for 3 consecutive breaths, the Ventilator shall make a long beep once
+ shall make ,  root ,  19
+	 is below PEEP ,  advcl ,  10
+		 If ,  mark ,  1
+		 the lung pressure ,  nsubj ,  4
+			 during exhalation period ,  nmod ,  7
+		 for 3 consecutive breaths ,  obl ,  14
+	 the Ventilator ,  nsubj ,  17
+	 a long beep ,  obj ,  22
+	 once ,  advmod ,  23
+End of debugging
+
+
+RI:53:If the lung pressure during exhalation period is below PEEP for 3 consecutive breaths, the Ventilator shall make a long beep once
+Importance: Mandatory
+Main Task: shall make
+Trigger type: Conditional
+	Trig Verifiable:True
+	Root Task: is below PEEP
+	Subect: the lung pressure
+		Sub qualfier: during exhalation period
+	Trig Qualifier: for 3 consecutive breaths
+Subect: the Ventilator 
+Object: a long beep
+Adverbs to root:  once
+Req Verifiable:False
+
+For debugging
+If the inhaled Tidal volume and exhaled Tidal volume differ by more than 20%, the Ventilator shall show an alert on the screen
+ shall show ,  root ,  20
+	 differ ,  advcl ,  10
+		 If ,  mark ,  1
+		 the inhaled Tidal volume and exhaled Tidal volume ,  nsubj ,  5
+		 20 % ,  obl ,  15
+			 by more than ,  advmod ,  12
+	 the Ventilator ,  nsubj ,  18
+	 an alert ,  obj ,  22
+		 on the screen ,  nmod ,  25
+End of debugging
+
+
+RI:54:If the inhaled Tidal volume and exhaled Tidal volume differ by more than 20%, the Ventilator shall show an alert on the screen
+Importance: Mandatory
+Main Task: shall show
+Trigger type: Conditional
+	Trig Verifiable:True
+	Root Task: differ
+	Subect: the inhaled Tidal volume and exhaled Tidal volume
+	Trig Qualifier: 20 %
+Subect: the Ventilator 
+Object: an alert
+Object preps: on the screen
+Req Verifiable:True
+
+For debugging
+While in the Ventilation state, if the stop ventilation button is pressed, the Ventilator shall prompt for confirmation
+ shall prompt ,  root ,  18
+	 in the Ventilation state ,  advcl ,  5
+		 While ,  mark ,  1
+	 is pressed ,  advcl ,  13
+		 if ,  mark ,  7
+		 the stop ventilation button ,  nsubj:pass ,  11
+	 the Ventilator ,  nsubj ,  16
+	 for confirmation ,  obl ,  20
+End of debugging
+
+
+RI:55:While in the Ventilation state, if the stop ventilation button is pressed, the Ventilator shall prompt for confirmation
+Importance: Mandatory
+Main Task: shall prompt
+State: in the Ventilation state
+Trigger type: Conditional
+	Trig Verifiable:True
+	Root Task: is pressed
+	Subect: the stop ventilation button
+Subect: the Ventilator
+Object preps: for confirmation
+Req Verifiable:True
+
+For debugging
+While in the Venitlation state, the Ventilator shall store the important parameters of patient in the permanent storage
+ shall store ,  root ,  10
+	 in the Venitlation state ,  advcl ,  5
+		 While ,  mark ,  1
+	 the Ventilator ,  nsubj ,  8
+	 the important parameters ,  obj ,  13
+		 of patient ,  nmod ,  15
+	 in the permanent storage ,  obl ,  19
+End of debugging
+
+
+RI:56:While in the Venitlation state, the Ventilator shall store the important parameters of patient in the permanent storage
+Importance: Mandatory
+Main Task: shall store
+State: in the Venitlation state
+Subect: the Ventilator 
+Object: the important parameters
+Object preps: of patient
+Object preps: in the permanent storage
+Req Verifiable:True

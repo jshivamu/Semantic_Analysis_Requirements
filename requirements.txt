@@ -1,0 +1,83 @@
+#Author: Jagadish Shivamurthy, jshivamu@gmail.com
+When the Computer boots up, the Computer shall read the Channel ID from HW
+##Though the below requirement (involving "has not already") did work fine, the next one did not work due to phrase boots up. The boots is interpreted as NOUN (with plural) instead of VERB. Hence changed over to the next ones.
+#When the Computer boots up, if the other Computer has not already assumed the role of Active computer, the Computer shall assume the role of Active Computer
+#When the Computer boots up, if the other Computer has already assumed the role of Active computer, the Computer shall assume the role of Standby Computer
+
+When the Computer starts, if the other Computer has not already assumed the role of Active computer, the Computer shall assume the role of Active Computer
+When the Computer starts, if the other Computer has already assumed the role of Active computer, the Computer shall assume the role of Standby Computer
+
+If both the Computers simultaneously boot up, the Computer with Channel ID 1 shall assume the role of Active Computer
+
+The Active Computer shall configure itself as the Bus Master
+When the Active Computer configures itself as the Bus Master, it shall enter operational state
+The Standby Computer shall configure itself as a Remote Terminal
+
+The Active Computer shall detect the booting of the Standby Computer
+When the Active Computer detects the booting of the Standby Computer, it shall send its state information to the Standby Computer
+When the Standby Computer receives state information from the Active Computer, it shall enter the operational state
+
+While in the operational state, the Computers shall repeat the execution every 10 msec
+While in the operational state, when 10 msec elapse, the Active Computer shall command the sensors to provide their inputs, status, and health to the Active Computer
+While in the operational state, the Active Computer shall send the command to a Remote Terminal on bus A
+
+While in the operational state, the Active Computer shall include a heartbeat counter in its command.
+
+While in the operational state, if any Remote Terminal does not acknowledge the commands on either bus A or B for 3 consecutive periods, the Active Computer shall declare communication failure for that Remote Terminal
+
+While in the operational state, if any Remote Terminal's heartbeat count does not change for 3 consecutive frames, the Active Computer shall declare failure for that Remote Terminal
+
+While in the operational state, if a Remote Terminal responds for 3 consecutive periods, the Active Computer shall set communication failure OFF for that Remote Terminal
+
+While in the operational state, if both redundant pairs of Remote Terminals are healthy, the Active Computer shall consider the average of the inputs from them.
+While in the operational state, if communication failure is declared for a Remote Terminal, the Active Computer shall not consider the inputs from it.
+While in the operational state, if a Remote Terminal has indicated failure in its status, the Active Computer shall not consider the inputs from it.
+While in the operational state, if the inputs are not considered from a Remote Terminal, the Active Computer shall consider the inputs from the corresponding redundant pair
+While in the operational state, if the inputs from both the redundant pair of Remote Terminals are failed, the Active Computer shall retain the previous inputs.
+
+While in the operational state, the Standby Computer shall update the status of each Remote Terminal
+While in the operational state, if the Active Computer does not send commands for 10 consecutive frames to any Remote Terminal, the Standby Computer shall take over as Active Computer
+
+While in the operational state, the Standby Computer shall report its health status to Active Computer
+The Computer shall send the Remote Terminal's health and status to Telemetry every 10 msec
+The Active Computer shall send the health and status of the Standby Computer to Telemetry every 10 msec
+The Standby Computer shall send the health and status of the Active Computer to Telemetry every 10 msec
+
+If the Active Computer fails, the Standby Computer shall take over as Active Computer
+If the Active Computer fails, the Standby Computer shall assume the role of Active Computer
+
+#Ventilator requirements
+
+When powered on, the Ventilator shall check for the presence of the calibration data
+When powered on, if the calibration data is not present, the Ventilator shall prompt for Calibration
+When powered on, if the calibration data is older than six months, the Ventilator shall prompt for Calibration
+If valid Calibration data is not found, the Ventilator shall not allow starting of the ventilation
+When the Start ventilation button is pressed, the Ventilator shall read configuration data from the UI Controller
+
+When the configuration data is read, the Ventilator shall compute the inhalation period and exhalation period from the I-E ratio and Respiration rate
+When the Start ventilation button is pressed, the Ventilator shall enter inhalation cycles
+
+When entering the inhalation cycle, the Ventilator shall compute the flow rate from configured Tidal volume and inhalation period
+
+While in the inhalation cycle, if the volume mode is chosen, the Ventilator shall maintain a constant flow rate
+While in the inhalation cycle, if the pressure mode is chosen, the Ventilator shall maintain a constant lung pressure
+
+While in the inhalation cycle, if the inhalation period is complete, the Ventilator shall enter the exhalation cycle
+When exiting the inhalation cycle, the Ventilator shall update the inhaled Tidal volume on the screen
+While in the exhalation cycle, the Ventilator shall maintain the lung pressure to the configured PEEP level
+While in the exhalation cycle, the Ventilator shall measure the exhaled Tidal volume
+While in the exhalation cycle, if the exhalation period is complete, the Ventilator shall enter the inhalation cycle
+When exiting the exhalation cycle, the Ventilator shall update the exhaled Tidal volume on the screen
+
+When exiting the exhalation cycle, the Ventilator shall read the configuration data from UI Controller
+If the lung pressure exceeds configured safety limit, the Ventilator shall open the safety valve
+
+If the lung pressure exceeds configured safety limit continously for one second, the Ventilator shall open the safety valve
+If the moving average of 3 readings of lung pressure exceeds configured safety limit, the Ventilator shall open the safety valve
+
+If the power source is the battery the Ventilator shall make a short beep every 3 seconds
+If the inlet air pressure is below the critical limit, the Ventilator shall make a long beep every 1 second
+If the lung pressure during exhalation period is below PEEP for 3 consecutive breaths, the Ventilator shall make a long beep once
+If the inhaled Tidal volume and exhaled Tidal volume differ by more than 20%, the Ventilator shall show an alert on the screen
+While in the Ventilation state, if the stop ventilation button is pressed, the Ventilator shall prompt for confirmation
+While in the Venitlation state, the Ventilator shall store the important parameters of patient in the permanent storage
